@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO-DO List</title>
+    <!-- bootstrap 5.0.2 css for design -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- font awesome css for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- css link -->
+    <link rel="stylesheet" href="/todolist.css">
+</head>
+<body>
+    <div class="overlay">
+    <div class="container-fluid">
+        <div class="container">
+            <div class="py-5  mx-auto cont-1">
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Enter Your Task"  id="task">
+                    <button class="btn " type="button" id="addTask">ADD TASK</button>
+                </div>
+                <div class="display mt-4">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Task</th>
+                                <th scope="col">Action</th>
+                            </tr>
+                        </thead>
+                        <tbody id="records">
+                            <!-- <tr>
+                                <th scope="row">1</th>
+                                <td>Javascript</td>
+                                <td><i class="btn icon fa fa-edit  mx-2"></i>
+                                <i class="btn icon  fa fa-trash"></i></td>
+                            </tr> -->
+                        </tbody>
+                    </table>
+               
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <script src="/practicetodolist.js"></script>
+</body>
+</html>
